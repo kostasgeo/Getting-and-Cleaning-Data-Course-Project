@@ -8,7 +8,7 @@ filesList <- list.files(filePath, recursive = T, full.names = T)
 # b. Install and load dplyr package for manipulating data frames
 install.packages("dplyr") 
 library(dplyr)
-# b. Read files
+# c. Read files
 test_labels <- read.table(file.path(filePath, "test", "y_test.txt"))
 train_labels <- read.table(file.path(filePath, "train", "y_train.txt"))
 test_set <- read.table(file.path(filePath, "test", "x_test.txt"))
@@ -25,7 +25,7 @@ subject <- rbind(test_subject, train_subject)
 names(subject) <- c("subject")
 data <- cbind(cbind(set, subject), labels)
 ################
-# 2. Extract only the measurements on the mean and standard deviation for each measurement. 
+# 2. Extract only the measurements on the mean and standard deviation. 
 ################
 # Set the variables names (set) from the 'features.txt' file (2nd column)
 variablesNames <- read.table(file.path(filePath, "features.txt"), head = F)
@@ -33,7 +33,7 @@ names(set) <- variablesNames$V2
 # Extract mean and std measurements
 mean_std <- subset(data, select=grepl("mean|std", names(set))) 
 ################
-# 3. Use descriptive activity names to name the activities in the data set
+# 3. Use descriptive activity names to name the activities in the data set.
 ################
 mean_std <- mutate(mean_std, labels = real_labels[labels, 2])
 ################
