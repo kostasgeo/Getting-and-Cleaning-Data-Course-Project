@@ -6,7 +6,7 @@ filePath <- file.path("/Users/konstantinos/Dropbox/Courses/GettingAndCleaningDat
 # Set list of files
 filesList <- list.files(filePath, recursive = T, full.names = T)
 # b. Install and load dplyr package for manipulating data frames
-install.packages("dplyr")
+install.packages("dplyr") 
 library(dplyr)
 # b. Read files
 test_labels <- read.table(file.path(filePath, "test", "y_test.txt"))
