@@ -51,3 +51,6 @@ names(set) <- gsub("BodyBody", "Body", names(set)))
 # each variable for each activity and each subject.
 ################
 data_means <- aggregate(data, by = list(data$subject, data$labels), FUN = mean)
+
+# Write data set of step 5 to text file
+write.table(data_means, file="data_new.txt", row.name = F)
