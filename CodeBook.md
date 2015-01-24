@@ -80,8 +80,9 @@ Step 1. Merge the training and the test sets to create one data set.
 
 Step 2. Extract only the measurements on the mean and standard deviation for each measurement. 
 
-  a. Set the variables names (set) from the 'features.txt' file (2nd column)
-  b. Extract mean and std measurements using subset
+  - Set the variables names (set) from the 'features.txt' file (2nd column)
+  
+  - Extract mean and std measurements using subset
 
 Step 3. Use descriptive activity names to name the activities in the data set
   Use function mutate of dplyr package
