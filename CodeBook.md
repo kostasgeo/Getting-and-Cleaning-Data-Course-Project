@@ -92,3 +92,5 @@ Step 4. Appropriately label the data set with descriptive variable names.
 
 Step 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
   Use function aggregate with  by = list(data$subject, data$labels) and FUN = mean arguments.
+=======
+# Logic 
