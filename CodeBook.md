@@ -77,3 +77,18 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 # Logic
+Step 1. Merge the training and the test sets to create one data set.
+
+Step 2. Extract only the measurements on the mean and standard deviation for each measurement. 
+
+  a. Set the variables names (set) from the 'features.txt' file (2nd column)
+  b. Extract mean and std measurements using subset
+
+Step 3. Use descriptive activity names to name the activities in the data set
+  Use function mutate of dplyr package
+
+Step 4. Appropriately label the data set with descriptive variable names. 
+  Use function gsub
+
+Step 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+  Use function aggregate with  by = list(data$subject, data$labels) and FUN = mean arguments.
