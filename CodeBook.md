@@ -76,4 +76,4 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-# Logic
+# Logic 
