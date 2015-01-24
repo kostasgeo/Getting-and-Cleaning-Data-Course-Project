@@ -16,9 +16,9 @@ Create one R script called run_analysis.R that does the following.
 
 ## How to Use this file
 
-1. Download data file and extract folder UCI HAR Dataset
+1. Download data file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ) and extract the folder 'UCI HAR Dataset'.
 
-2. Set foler as working directory
+2. Set this folder as working directory.
 
-3. Run the script to get the final tidy data set 
+3. Run the script to get the final tidy data set. 
 
