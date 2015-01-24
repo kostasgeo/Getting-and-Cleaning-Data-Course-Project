@@ -39,7 +39,7 @@ tBodyAccMag
 tGravityAccMag
 tBodyAccJerkMag
 tBodyGyroMag
-tBodyGyroJerkMag
+tBodyGyroJerkMag 
 fBodyAcc-XYZ
 fBodyAccJerk-XYZ
 fBodyGyro-XYZ
